@@ -1,5 +1,9 @@
 unit ssl_util;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 uses ssl_types, ssl_asn;
 var

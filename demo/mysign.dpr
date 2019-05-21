@@ -1,11 +1,13 @@
 program mysign;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 {$APPTYPE CONSOLE}
 
-{$R *.res}
-
 uses
-  System.SysUtils,
+  SysUtils,
   ssl_evp,
   ssl_bio,
   ssl_err,

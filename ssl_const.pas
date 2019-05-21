@@ -1,4 +1,9 @@
 unit ssl_const;
+
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 {$REGION 'OBJECT'}
 const

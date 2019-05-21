@@ -1,4 +1,9 @@
 unit ssl_cms;
+
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 uses ssl_types;
 

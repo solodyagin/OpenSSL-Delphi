@@ -1,5 +1,9 @@
 unit ssl_md5;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 uses ssl_types;
 

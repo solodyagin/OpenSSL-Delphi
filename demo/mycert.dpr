@@ -1,11 +1,13 @@
 program mycert;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 {$APPTYPE CONSOLE}
 
-{$R *.res}
-
 uses
-  System.SysUtils,
+  SysUtils,
   ssl_const in '..\ssl_const.pas',
   ssl_rsa in '..\ssl_rsa.pas',
   ssl_types in '..\ssl_types.pas',

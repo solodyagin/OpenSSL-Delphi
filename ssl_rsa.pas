@@ -1,5 +1,9 @@
 unit ssl_rsa;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 uses ssl_types;
 

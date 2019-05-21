@@ -1,11 +1,13 @@
 program mydigest;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 {$APPTYPE CONSOLE}
 
-{$R *.res}
-
 uses
-  System.SysUtils,
+  SysUtils,
   Classes,
   ssl_md5,
   ssl_mdc2,

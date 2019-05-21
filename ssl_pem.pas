@@ -1,6 +1,10 @@
 {$i ssl.inc}
 unit ssl_pem;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 uses ssl_types;
 

@@ -1,6 +1,10 @@
 {$I ssl.inc}
 unit ssl_err;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 uses sysutils, ssl_types;
 var

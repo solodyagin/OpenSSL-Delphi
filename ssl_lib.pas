@@ -1,5 +1,9 @@
 unit ssl_lib;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 
 var
@@ -83,4 +87,4 @@ finalization
   FreeLibrary(hCrypt);
  {$ENDIF}
 
-end.
+end.

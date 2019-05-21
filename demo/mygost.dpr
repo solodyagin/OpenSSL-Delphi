@@ -1,11 +1,13 @@
 program mygost;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 {$APPTYPE CONSOLE}
 
-{$R *.res}
-
 uses
-  System.SysUtils,
+  SysUtils,
   ssl_engine in '..\ssl_engine.pas',
   ssl_err in '..\ssl_err.pas',
   ssl_types in '..\ssl_types.pas',

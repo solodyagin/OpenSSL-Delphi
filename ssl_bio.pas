@@ -1,11 +1,19 @@
 {$I ssl.inc}
 unit ssl_bio;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 
 uses
   {$IFDEF FPC}
-    {$IFDEF UNIX}cNetDB,{$ENDIF UNIX}
+    {$IFDEF MSWINDOWS}
+      winsock2,
+    {$ELSE}
+      cNetDB,
+    {$ENDIF MSWINDOWS}
   {$ELSE}
     {$IFDEF MSWINDOWS}
       winapi.winsock2,
@@ -309,4 +317,4 @@ begin
   Result := BIO_ctrl(b, BIO_C_SET_FILENAME, BIO_CLOSE or BIO_FP_READ, Name);
 end;
 
-end.
+end.

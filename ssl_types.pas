@@ -2,6 +2,10 @@
 
 unit ssl_types;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 
 uses

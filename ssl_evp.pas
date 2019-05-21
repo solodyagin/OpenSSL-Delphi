@@ -1,6 +1,10 @@
 {$I ssl.inc}
 unit ssl_evp;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 interface
 
 uses ssl_types, ssl_const;

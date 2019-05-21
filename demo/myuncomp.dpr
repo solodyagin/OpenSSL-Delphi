@@ -1,11 +1,13 @@
 program mycomp;
 
+{$IFDEF FPC}
+  {$MODE Delphi}
+{$ENDIF}
+
 {$APPTYPE CONSOLE}
 
-{$R *.res}
-
 uses
-  System.SysUtils,
+  SysUtils,
   ssl_types,
   ssl_const,
   ssl_util,
